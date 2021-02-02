@@ -51,11 +51,11 @@ Build and push your image:
 Note that you must have the necessary permissions to push the image.
 
 Run to check if everything is OK:
-> docker run gcr.io/cool-ml-demos/model_server:latest
+``` docker run gcr.io/cool-ml-demos/model_server:latest ```
     
 (optional) Make local predictions with the following curl command. First you need to create a file request.json.
 
-> curl -X POST --data @/tmp/request.json http://localhost:8080/predict
+``` curl -X POST --data @/tmp/request.json http://localhost:8080/predict ```
 
 ## Prepare the Payload for request
 
