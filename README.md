@@ -5,7 +5,7 @@ The goal here is to demonstrate who to use an exported model from AutoML and a s
 
 High level architecture of this tutorial:
 
-<img src="https://drive.google.com/uc?export=view&id=1op3oQO8eI8Esl19IT_7QhwFtyDSRFZuH"
+<img src="https://drive.google.com/uc?export=view&id=14MxXRuySqUftR7OuRje-wZy8ZCS1kuL2"
      alt="Menu"
      style="width:20%"
      />
@@ -14,7 +14,7 @@ ps.: For this example I create a model with the Creditcard dataset from Kaggle. 
 
 ## Export the models from AutoML Tables
 
-<img src="https://drive.google.com/uc?export=view&id=1xqAFty-HI-TjttBJdPVqJ-douEUox7UU"
+<img src="https://drive.google.com/uc?export=view&id=1rFcchOyTfH7_bRSg6eA83wBCrLwk9MSG"
      alt="Menu"
      style="width:20%"
      />
