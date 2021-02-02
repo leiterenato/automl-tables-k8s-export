@@ -9,7 +9,7 @@ High level architecture of this tutorial:
      alt="Menu"
      style="width:20%"
      />
-
+ 
 ps.: For this example I create a model with the Creditcard dataset from Kaggle. (https://www.kaggle.com/mlg-ulb/creditcardfraud)
 
 ## Export the models from AutoML Tables
