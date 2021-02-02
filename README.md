@@ -5,23 +5,23 @@ The goal here is to demonstrate who to use an exported model from AutoML and a s
 
 High level architecture of this tutorial:
 
-![architecture](https://github.com/leiterenato/ml-samples/blob/master/googlecloud/tables_export/diagrams/architecture.png "Architecture")
+![architecture](./architecture.png "Architecture")
 
 ps.: For this example I create a model with the Creditcard dataset from Kaggle. (https://www.kaggle.com/mlg-ulb/creditcardfraud)
 
 ## Export the models from AutoML Tables
 
-![export model](https://github.com/leiterenato/ml-samples/blob/master/googlecloud/tables_export/diagrams/export.png "Export Model")
+![export model](./export.png "Export Model")
 
 After exporting the model, copy to your working machine and change the name of your folder to remove the timestamp (avoid naming problems).\
 Example from documentation:
 https://cloud.google.com/automl-tables/docs/model-export#run-server
 
-> gsutil -m cp -r gs://{path the exported model} .
+```gsutil -m cp -r gs://{path the exported model} .```
     
 Change the last name to remove the timestamp (not supported by the Docker container).
     
-> mv model-export/tbl/tf_saved_model-<model-name>-<export-timestamp> model-export/tbl/<new-dir-name>
+```mv model-export/tbl/tf_saved_model-<model-name>-<export-timestamp> model-export/tbl/<new-dir-name>```
 
 Remember the path to your model, it will be used to copy to a docker image.
 
@@ -30,13 +30,15 @@ Remember the path to your model, it will be used to copy to a docker image.
 From this repo, go to folder 'container_serving' and change the Dockerfile with the path to your model.
 
 Dockerfile:
-> FROM gcr.io/cloud-automl-tables-public/model_server\
-> ADD {path to your model} /models/default/0000001
+```
+ FROM gcr.io/cloud-automl-tables-public/model_server\
+ ADD {path to your model} /models/default/0000001
+```
 
 Build and push your image:
-> docker build -t gcr.io/{your project}/model_server:latest .
+``` docker build -t gcr.io/{your project}/model_server:latest .```
 
-> docker push gcr.io/{your project}/model_server:latest
+``` docker push gcr.io/{your project}/model_server:latest ```
 
 (you can push the images to a local registry as well.)
 
