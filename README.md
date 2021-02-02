@@ -5,13 +5,19 @@ The goal here is to demonstrate who to use an exported model from AutoML and a s
 
 High level architecture of this tutorial:
 
-![architecture](https://drive.google.com/uc?export=view&id=1op3oQO8eI8Esl19IT_7QhwFtyDSRFZuH)
+<img src="https://drive.google.com/uc?export=view&id=1op3oQO8eI8Esl19IT_7QhwFtyDSRFZuH"
+     alt="Menu"
+     style="width:20%"
+     />
 
 ps.: For this example I create a model with the Creditcard dataset from Kaggle. (https://www.kaggle.com/mlg-ulb/creditcardfraud)
 
 ## Export the models from AutoML Tables
 
-![export model](https://drive.google.com/uc?export=view&id=1xqAFty-HI-TjttBJdPVqJ-douEUox7UU)
+<img src="https://drive.google.com/uc?export=view&id=1xqAFty-HI-TjttBJdPVqJ-douEUox7UU"
+     alt="Menu"
+     style="width:20%"
+     />
 
 After exporting the model, copy to your working machine and change the name of your folder to remove the timestamp (avoid naming problems).\
 Example from documentation:
